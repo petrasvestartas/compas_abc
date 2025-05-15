@@ -77,6 +77,8 @@ endfunction()
 # Create individual extension modules for each C++ file
 # Copy this line with new file name and module name
 add_nanobind_extension(_primitives src/primitives.cpp)
+add_nanobind_extension(_ndarray src/ndarray.cpp)
+add_nanobind_extension(_eigen src/eigen.cpp)
 
 message(STATUS "============= Build Configuration =============")
 message(STATUS "Build Type: ${CMAKE_BUILD_TYPE}")
